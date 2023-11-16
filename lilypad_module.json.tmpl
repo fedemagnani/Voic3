@@ -19,7 +19,9 @@
                     "python3",
                     "TTS/bin/synthesize.py",
                     "--text",
-                    {{.TEXT}}
+                    {{.TEXT}},
+                    "--out_path",
+                    "/outputs"
                 ],
                 "Image": "ghcr.io/coqui-ai/tts:3c2d5a9e03040e081732a5e917464ddd74049c43@sha256:80b0b260421850b10f28d327b44802dc61eebf62603e19e6ef7560df33174fb5",
                 "EnvironmentVariables": [
